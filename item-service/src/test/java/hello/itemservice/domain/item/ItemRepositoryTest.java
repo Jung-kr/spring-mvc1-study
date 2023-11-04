@@ -68,4 +68,22 @@ class ItemRepositoryTest {
         assertThat(findItem.getQuantity()).isEqualTo(updateParam.getQuantity());
     }
 
+    @Test
+    void delete() {
+        //given
+        Item item1 = new Item("Item1", 10000, 12);
+        Item item2 = new Item("Item2", 20000, 22);
+
+        itemRepository.save(item1);
+        itemRepository.save(item2);
+
+        //when
+        itemRepository.delete(item1.getId());
+        List<Item> items = itemRepository.findAll();
+
+        //then
+        assertThat(items.size()).isEqualTo(1);
+        assertThat(items).contains(item2);
+    }
+
 }
