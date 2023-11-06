@@ -17,11 +17,9 @@
   </div>
 
   <!-- RedirectAttributes를 이용한 저장 메시지 출력 -->
-  <h2 th:if="${param.status}" th:text="'저장 완료!'">
-    <script th:inline="javascript">
-      alert("gg");
-    </script>
-  </h2>
+  <script th:if="${param.status}" th:inline="javascript">
+        alert("저장되었습니다.");
+  </script>
 
   <div>
     <label for="itemId">상품 ID</label>

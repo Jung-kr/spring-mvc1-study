@@ -129,9 +129,10 @@ public class BasicItemController {
 
     // 상품 삭제
     @GetMapping("/{itemId}/delete")
-    public String deleteItem(@PathVariable Long itemId) {
+    public String deleteItem(@PathVariable Long itemId, RedirectAttributes redirectAttributes) {
         itemRepository.delete(itemId);
-        return "redirect:/basic/items";
+        redirectAttributes.addAttribute("status", true);
+        return "redirect:/basic/items";     // => /basic/items?status=true
     }
 
 

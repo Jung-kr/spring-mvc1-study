@@ -10,6 +10,12 @@
     <div class="py-5 text-center">
         <h2>상품 목록</h2>
     </div>
+
+    <!-- RedirectAttributes를 이용한 삭제 메시지 출력 -->
+    <script th:if="${param.status}" th:inline="javascript">
+        alert("삭제되었습니다.");
+    </script>
+
     <div class="row">
         <div class="col">
             <button class="btn btn-primary float-end"
