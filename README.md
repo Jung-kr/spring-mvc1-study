@@ -1,4 +1,4 @@
-# spring-basic-study
+# spring-mvc1-study
 
 Inflearn 김영한님의 '스프링 MVC 1편 - 백엔드 웹 개발 핵심 기술'  강의를 듣고 학습한 내용입니다.  
 ***강의링크 ->*** [스프링 MVC 1편 - 백엔드 웹 개발 핵심 기술](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-mvc-1)
@@ -6,7 +6,6 @@ Inflearn 김영한님의 '스프링 MVC 1편 - 백엔드 웹 개발 핵심 기�
 
 # 강의 목차   
 
-- 섹션 0. 소개
 - 섹션 1. 웹 애플리케이션 이해
 - 섹션 2. 서블릿
 - 섹션 3. 서블릿, JSP, MVC 패턴
